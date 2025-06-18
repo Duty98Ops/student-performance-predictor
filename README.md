@@ -1,94 +1,110 @@
-Berikut contoh README.md yang bisa kamu pakai untuk repo GitHub kamu:
+Tentu! Berikut README lengkap dengan gaya yang kamu minta, plus link dataset dari Kaggle:
 
-````markdown
+---
+
 # Student Performance Predictor
 
-Aplikasi prediksi performa akademik siswa menggunakan model Machine Learning (Random Forest) yang dibangun dengan Python dan Streamlit.
+Aplikasi prediksi performa akademik siswa berbasis machine learning dengan antarmuka Streamlit. Model memanfaatkan data demografi dan nilai ujian siswa untuk memprediksi kelulusan.
 
 ---
 
-## Deskripsi
+## 🚀 Key Features
 
-Project ini menggunakan dataset **Students Performance in Exams** untuk memprediksi apakah seorang siswa akan **lulus** atau **tidak lulus** berdasarkan beberapa fitur seperti jenis kelamin, kelompok sosial, pendidikan orang tua, jenis makan siang, pelatihan persiapan ujian, dan nilai ujian (matematika, membaca, menulis).
-
-Model yang digunakan adalah Random Forest dengan preprocessing fitur menggunakan scikit-learn.
-
----
-
-## Fitur
-
-- Input data siswa dengan antarmuka web yang user-friendly menggunakan Streamlit.
-- Model dan preprocessing pipeline sudah di-save dengan `joblib`.
-- Validasi input dengan range nilai yang tepat (0-100 untuk nilai ujian).
-- Output prediksi berupa status kelulusan dan probabilitas.
+* Input data siswa dengan label yang mudah dimengerti
+* Validasi nilai ujian (0-100)
+* Prediksi kelulusan dan probabilitas secara real-time
+* Model Random Forest yang sudah terlatih dan siap pakai
+* Preprocessing otomatis dengan pipeline terintegrasi
+* Antarmuka user-friendly dan sesuai konteks Indonesia
 
 ---
 
-## Cara Menjalankan
+## 🛠️ Technology Stack
 
-1. Clone repository ini:
+* Python (pandas, scikit-learn, joblib)
+* Streamlit (web UI)
+* Machine Learning: Random Forest Classifier
+* Serialization: joblib
+
+---
+
+## 🔧 Setup & Installation
+
+Clone repo:
 
 ```bash
 git clone https://github.com/Duty98Ops/student-performance-predictor.git
 cd student-performance-predictor
-````
+```
 
-2. Install dependencies (disarankan gunakan virtual environment):
+Buat virtual environment dan aktifkan:
+
+```bash
+python -m venv venv
+# Windows
+.\venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Jalankan aplikasi Streamlit:
+Jalankan aplikasi Streamlit:
 
 ```bash
 streamlit run app.py
 ```
 
-4. Buka browser dan akses alamat yang diberikan, biasanya `http://localhost:8501`.
+---
+
+## ⚙️ Usage
+
+Isi formulir input data siswa dengan nilai dan informasi yang valid. Tekan tombol **Prediksi** untuk mendapatkan hasil kelulusan beserta probabilitasnya.
 
 ---
 
-## Struktur Folder
+## 📊 Dataset
 
-```
-student-performance-predictor/
-├── app.py                  # Streamlit app
-├── model/
-│   ├── model.pkl           # Model Random Forest
-│   ├── preprocessor.pkl    # Preprocessing pipeline
-│   └── pipeline.pkl        # (Optional) full pipeline
-├── data/
-│   └── student_cleaned.csv # Dataset
-├── notebooks/
-│   └── 01_explore_student_data.ipynb # Notebook eksplorasi data
-├── README.md
-└── requirements.txt
-```
+Dataset yang digunakan adalah **Student Performance Dataset** dari UCI, yang juga tersedia di Kaggle:
+[https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 ---
 
-## Dataset
+## 📈 Data & Model Details
 
-Dataset yang digunakan adalah [Students Performance in Exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams), sudah dibersihkan dan disesuaikan untuk keperluan model.
+**Fitur Input:**
 
----
+* gender
+* race/ethnicity (Kelompok Sosial)
+* parental level of education
+* lunch (Jenis Makan Siang)
+* test preparation course (Pelatihan Persiapan Ujian)
+* math score, reading score, writing score (nilai 0-100)
 
-## Lisensi
+**Model:**
 
-Project ini dilisensikan di bawah MIT License.
-
----
-
-Jika ada pertanyaan atau masukan, silakan buat issue atau kontak langsung.
-
----
-
-**Repo:** [https://github.com/Duty98Ops/student-performance-predictor](https://github.com/Duty98Ops/student-performance-predictor.git)
-
-```
+* Algoritma: Random Forest Classifier
+* Akurasi: \~98% pada data uji
+* Preprocessing: OneHotEncoder & ColumnTransformer
 
 ---
 
-Kalau kamu butuh, aku juga bisa bantu bikin file `requirements.txt` untuk project ini! Mau?
-```
+## ⚠️ Common Issues & Solutions
+
+| Issue                                  | Cause                         | Solution                                   |
+| -------------------------------------- | ----------------------------- | ------------------------------------------ |
+| Error input nilai melebihi batas 0-100 | Input tidak divalidasi        | Masukkan nilai antara 0 dan 100            |
+| Model error saat prediksi              | Input dataframe tidak lengkap | Pastikan semua kolom terisi                |
+| Aplikasi tidak jalan                   | Dependensi belum terinstall   | Jalankan `pip install -r requirements.txt` |
+
+---
+
+## 🔗 Links
+
+Streamlit Repository: 
+
+
