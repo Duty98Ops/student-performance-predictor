@@ -1,7 +1,3 @@
-Tentu! Berikut README lengkap dengan gaya yang kamu minta, plus link dataset dari Kaggle:
-
----
-
 # Student Performance Predictor
 
 Aplikasi prediksi performa akademik siswa berbasis machine learning dengan antarmuka Streamlit. Model memanfaatkan data demografi dan nilai ujian siswa untuk memprediksi kelulusan.
