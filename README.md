@@ -101,6 +101,6 @@ Dataset yang digunakan adalah **Student Performance Dataset**, yang juga tersedi
 
 ## 🔗 Links
 
-Streamlit Repository: 
-
+Hugging Face Repository: 
+https://huggingface.co/spaces/Elvern/student-performance-predictor
 
