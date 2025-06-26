@@ -65,7 +65,7 @@ Isi formulir input data siswa dengan nilai dan informasi yang valid. Tekan tombo
 
 ## 📊 Dataset
 
-Dataset yang digunakan adalah **Student Performance Dataset** dari UCI, yang juga tersedia di Kaggle:
+Dataset yang digunakan adalah **Student Performance Dataset**, yang juga tersedia di Kaggle:
 [https://www.kaggle.com/datasets/spscientist/students-performance-in-exams](https://www.kaggle.com/datasets/spscientist/students-performance-in-exams)
 
 ---
